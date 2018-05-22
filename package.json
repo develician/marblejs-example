@@ -1,0 +1,20 @@
+{
+  "name": "marblejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@marblejs/core": "^0.2.2",
+    "@types/node": "^10.1.2",
+    "http": "^0.0.0",
+    "rxjs": "^6.1.0",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "start": "ts-node --project tsconfig.json src/index.ts",
+    "watch": "nodemon --watch src --ext ts --ignore '*.spec.ts' --exec npm run start"
+  },
+  "devDependencies": {
+    "ts-node": "^6.0.3"
+  }
+}
